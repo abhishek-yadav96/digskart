@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Digskart</string>
+    <string name="We_Will_Send">We Will Send OTP to Your Mobile Number for Authenticate Your Mobile Number</string>
+    <string name="Please_Fill_in_The_Correct_OTP">Please Fill in The Correct OTP To Authenticate Your Mobile Number</string>
+    <string name="no_whatsapp">Whatsapp is not install</string>
+    <string name="pleaseWait">Please wait</string>
+</resources>

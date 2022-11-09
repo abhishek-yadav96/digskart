@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/base"
+        android:title="Category" />
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/mall"
+        android:title="Order" />
+    <item
+        android:id="@+id/fourFragment"
+        android:icon="@drawable/love2"
+        android:title="Wish List" />
+    <item
+        android:id="@+id/fiveFragment"
+        android:icon="@drawable/account"
+        android:title="Profile" />
+</menu>

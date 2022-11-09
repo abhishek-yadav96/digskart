@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/topview"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_baseline_arrow_back_24" />
+
+                <TextView
+                    android:layout_width="342dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_35sdp"
+                    android:gravity="center"
+                    android:text="Profile Settings"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/topview"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/avtar" />
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/profile"
+                android:layout_toEndOf="@+id/profile"
+                android:layout_marginTop="-53dp"
+                android:layout_marginStart="-52dp"
+                android:src="@drawable/add"/>
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/editly_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:padding="16dp"
+                android:background="@color/main_color"
+                app:borderColor="@color/texcolor"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fist Name"
+                    android:textColorHint="@color/white" />
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/editly_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:borderColor="@color/texcolor"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/main_color"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/editly_one"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/white"
+                    android:hint="Last Name" />
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/editly_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:borderColor="@color/texcolor"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/main_color"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/editly_two"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/white"
+                    android:hint="Email" />
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:id="@+id/editly_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:borderColor="@color/texcolor"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/main_color"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/editly_three"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/white"
+                    android:hint="Mobile" />
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+            <Button
+                android:id="@+id/signupbtn"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editly_four"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_100sdp"
+                android:background="@drawable/button_background"
+                android:text="Save"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

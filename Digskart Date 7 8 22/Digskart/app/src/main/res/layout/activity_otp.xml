@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        app:srcCompat="@drawable/verify" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Please enter the otp send to you"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Please_Fill_in_The_Correct_OTP"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/body_background"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Code is sent to "
+                android:textColorHint="@color/text_gray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/setmobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="9554308340"
+                android:textColorHint="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/codeview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/teal_700"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                app:cursorVisible="true"
+                app:forceKeyboard="true"
+                app:hint=""
+                app:inputType="number"
+                app:password="false"
+                app:pinBackground="@drawable/roundedcorner_white_stroke"
+                app:pinHeight="30dp"
+                app:pinLength="4"
+                app:pinWidth="30dp"
+                app:textSize="10dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:text="Verify Otp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            tools:ignore="MissingClass"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Did Not Recive OTP ?"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/quicksandregular"
+                android:gravity="center"
+                android:text="If not receive code than click Resend Code"
+                android:textColor="@color/black"
+                android:textColorLink="@drawable/resendsmsclickevent"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/resendtimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/quicksandregular"
+                android:gravity="center"
+                android:text="We Are About To Send You Code Within "
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
